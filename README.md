@@ -1,5 +1,7 @@
 # Mixed Messages README file
 
+https://seankennelly.github.io/CC_Mixed-Messages/
+
 ## Introduction
 This project was created as part of the Codecademy Full Stack course. It did not require building the site with HTML and CSS but I elected to.
 
