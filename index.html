@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kiwi+Maru:wght@300;400&family=Patrick+Hand&display=swap"
+    rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Recipe Idea Generator</title>
+</head>
+
+<body>
+  <main>
+    <div class="container main">
+      <header>
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <img src="design_assets/logo.png" alt="The logo for Recipe Generator">
+          </div>
+          <div class="col-12 col-lg-8">
+            <h1>Stuck For Ideas?</h1>
+          </div>
+          <div class="col-12 intro-text">
+            <p>
+              Do you find yourself lacking inspiration or ideas for what to cook? Use the handy tool below to generate
+              some meal ideas! </p>
+            <p>
+              Not sure which one you like best? Add them to a working list and keep hold of a few ideas at once!
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!-- IDEA GENERATOR-->
+      <section class="generator"> 
+        <h2>Idea Generator</h2>
+        <button id="generate-button" type="button" class="btn btn-success">Generate</button>
+        <div id="returned-recipe" class="hide">
+          <p id="first-para">Your recipe idea is:</p>
+          <p id="generated-idea"><!-- This is where JS produced recipe idea is inserted --></p>
+          <p>Enjoy!</p>
+        </div>
+        <button id="pin-button" type="button" class="hide btn btn-success">Pin Idea</button>
+      </section>
+
+      <!-- PINNED RECIPES -->
+      <section class="pinned hide"> 
+        <h2>Pinned Ideas</h2>
+          <ul>
+            <!-- Empty list to be filled by JS -->
+          </ul>
+          <button id="clear-button" type="button" class="btn btn-secondary">Clear</button>
+      </section>
+
+    </div>
+  </main>
+  <footer>
+    <div>
+      <p>This project was created by Seán Kennelly</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <!-- My Script -->
+    <script src="scripts/mixed_messages.js"></script>
+</body>
+
+</html>
